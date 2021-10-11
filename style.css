@@ -1,0 +1,207 @@
+/*Tar bort kanter*/
+body {
+    margin: 0;
+}
+/*Bakgrundsbild*/
+body
+{
+    background-repeat:no-repeat;
+      background-position: center;
+      background-image:url(Images/backgroundindex2.gif);
+      background-attachment:fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    height: 100%;
+    }
+
+/*Text på indexsidan*/
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-shadow: 2px 2px 4px #000000;
+}
+/*Soundcloud embed länk*/
+.sc-player {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+/*Titeln på hemsidan*/
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffff;
+    text-align: center;
+    font-size: 6rem;
+    letter-spacing: -.003em;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 5rem;
+    margin-bottom: 5rem;
+    margin-top: 0;
+}
+/*Menyn*/
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffff;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: -.003em;
+}
+/*Länk i meny*/
+a{
+    text-decoration: none;
+}
+/*Mouse over*/
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+/*// PONGSIDAN //*/
+/*ID element som JS hämtar*/
+#pong {
+    border: 2px solid #fff;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+/*Go back-knappen*/
+.goback {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-15%);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+/*// CHROMEDINO //*/
+
+/*Spelplanen eller spelrutan ink poängräkningen*/
+.spelruta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*Spelet */
+.game{
+    width: 600px;
+    height: 250px;
+    border: 1px solid black;
+    /* margin: auto; */
+    background-image: url(Images/chromedinobg.jpg);
+}
+
+/* Dino */
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(Images/trex.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+/* Animation för hopp*/
+.jump {
+    animation: jump 0.3s linear;
+}
+
+/* Keyframes för hopp */
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+/* Kaktus */
+#cactus {
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 110px;
+    left: 600px;
+    background-image: url("Images/cactus.png");
+    background-size: 20px 40px;
+    animation: block 2s infinite linear;
+}
+
+/* Keyframes för cactus */
+@keyframes block{
+    0% {
+        left: 600px;
+    }
+    100% {
+        left: -10px;
+    }
+}
+
+/* Sätter score i mitten av skärmen */
+.score-count{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+/*// EXIT FÖNSTER //*/
+/*ID för färg (funkar inte utan ID)*/
+#bg-blue {
+    background-color: #0000aa;
+}
+/*Bakgrundsfärg*/
+.bg {
+    background-color: #0000aa;
+}
+/*Brödtexten i errormeddelandet*/
+.errortext {
+    font-family: "Press Start 2P", cursive;
+    color: #ffff;
+    font-size: 22px;
+    line-height: 200%;
+    padding-left: 7%;
+    padding-right: 20%;
+}
+/*Sista raden*/
+.continue {
+    font-family: "Press Start 2P", cursive;
+    color: #ffff;
+    font-size: 22px;
+    line-height: 200%;
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+/*Rubriken*/
+.windows {
+    font-family: "Press Start 2P", cursive;
+    text-shadow: none;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    margin: 0;
+    padding: 35px;
+    margin-top: 250px;
+}

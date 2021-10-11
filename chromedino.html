@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="Images/chromedinofavicon.png" />
+
+		<!-- Hemsidans titel -->
+		<title>CHROME DINO</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- Google fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Spelrutan eller spelplan -->
+		<div class="spelruta">
+			<!-- Spel -->
+			<div class="game">
+				<!-- Dinosaurie -->
+				<div id="dino"></div>
+				<!-- Kaktus -->
+				<div id="cactus"></div>
+			</div>
+
+			<!-- Poängräkning -->
+			<p class="score-count">Score: <span id="scoreSpan"></span></p>
+		</div>
+		<!-- Href länk för att gå tillbaks till index -->
+		<div class="goback">
+			<a href="index.html"><h2>GO BACK</h2></a>
+		</div>
+
+		<!-- Länk till JS script -->
+		<script src="chromedino.js"></script>
+	</body>
+</html>
